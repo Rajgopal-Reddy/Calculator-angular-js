@@ -1,0 +1,50 @@
+<div class="section">
+<div class="card" style=" width: 300px">
+	<div class="card-title ">Calculator</div>
+	<div class="card-content">
+		<input type="text" class="input-field col s6"  ng-model="expression"  readonly id="expression">
+		
+		<div class="row">
+			<a class="btn-floating btn-large waves-effect waves-light center" ng-click=numberClicked('1')>1</a>
+			<a class="btn-floating btn-large waves-effect waves-light " ng-click=numberClicked('2')>2</a>
+			<a class="btn-floating btn-large waves-effect waves-light " ng-click=numberClicked('3')>3</a>
+			<div class="btn col s2 right" ng-click=operationClicked('+') >+</div>
+		</div> 
+		<div class="row">
+			<a class="btn-floating btn-large waves-effect waves-light center" ng-click=numberClicked('4')>4</a>
+			<a class="btn-floating btn-large waves-effect waves-light " ng-click=numberClicked('5')>5</a>
+			<a class="btn-floating btn-large waves-effect waves-light " ng-click=numberClicked('6')>6</a>
+			<div class="btn col s2 right" ng-click=operationClicked('-')>-</div>
+			
+		</div> 
+		<div class="row">
+			<a class="btn-floating btn-large waves-effect waves-light center" ng-click=numberClicked(7)>7</a>
+			<a class="btn-floating btn-large waves-effect waves-light " ng-click=numberClicked('8')>8</a>
+			<a class="btn-floating btn-large waves-effect waves-light " ng-click=numberClicked('9')>9</a>
+			<div class="btn col s2 right" ng-click=operationClicked('*') >*</div>
+		</div> 
+		<div class="row">
+			<a class="btn-floating btn-large waves-effect waves-light center" ng-click=resetClicked() >c</a>
+			<a class="btn-floating btn-large waves-effect waves-light " ng-click=numberClicked('0')>0</a>
+			<a class="btn-floating btn-large waves-effect waves-light ">ce</a>
+			<div class="btn col s2 right" ng-click=operationClicked('/')>/</div>
+		</div> 
+		<div class="row">
+			<a class="btn col s12" ng-click=calculate(expression)>=</a>
+		</div>
+      
+       
+      <!--    <div class="section"><div class="row">
+      <div class="btn col s2 " >4</div>
+      <div class="btn col s2 offset-s1">5</div>
+      <div class="btn col s2 offset-s1">6</div>
+      </div><div class="section"><div class="row">
+      <div class="btn col s2 " >7</div>
+      <div class="btn col s2 offset-s1">8</div>
+      <div class="btn col s2 offset-s1">9</div>
+      </div>
+     
+    </div>
+	</div> -->
+</div>
+</div>
